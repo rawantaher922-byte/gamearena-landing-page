@@ -50,7 +50,7 @@ To run the project locally:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/gamearena-landing-page.git
+   git clone https://github.com/rawantaher922-byte/gamearena-landing-page.git
    ```
 
 2. Open the project folder.
