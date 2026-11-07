@@ -1,0 +1,747 @@
+body {
+    font-family: "Chakra Petch", sans-serif;
+    background-color: #0B0E13;
+}
+
+.navbar {
+    background-color: #0B0E13;
+}
+
+.logo {
+    color: #CBFE1C;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav-link.active {
+    color: #CBFE1C !important;
+}
+
+.btn-sign-in {
+    background-color: #CBFE1C;
+    color: #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-start {
+    color: #000;
+    background-color: #CBFE1C;
+}
+
+.btn-watch {
+    color: #CBFE1C;
+    border: 1px solid #CBFE1C;
+}
+
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.hero-content h1 {
+    color: rgb(241, 241, 241);
+    font-size: 60px;
+    line-height: 75px;
+    font-weight: 700;
+    font-family: "Days One", sans-serif;
+}
+
+.hero-content p {
+    color: oklch(0.872 0.01 258.338);
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.d-block {
+    color: #CBFE1C;
+}
+
+
+
+.hero-img img {
+    border: solid #CBFE1C;
+    width: 90%;
+    object-fit: cover;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+.active-players {
+    bottom: -15px;
+    right: 0;
+    left: 25px;
+    transform: translateX(-500px);
+    border: 1px solid #374153;
+    height: 100px;
+    width: 160px;
+    background-color: #0B0E13;
+}
+
+.active-players i {
+    color: #CBFE1C;
+    font-size: 20px;
+}
+
+.active-players small {
+    color: oklch(0.707 0.022 261.325);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.active-players strong {
+    color: rgb(241, 241, 241);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+
+
+.btn-start,
+.btn-watch {
+    padding: 15px 25px;
+    font-weight: 700;
+    line-height: 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-start::after,
+.btn-watch::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -80%;
+    width: 15%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: skewX(-20deg);
+    filter: blur(4px);
+    opacity: 0;
+}
+
+.btn-start:hover {
+    background-color: #CBFE1C;
+}
+
+.btn-watch:hover .btn-green:hover {
+    background-color: #CBFE1C;
+    color: #000;
+}
+
+.btn-start:hover::after,
+.btn-watch:hover::after {
+    animation: quick-shine 0.5s ease;
+}
+
+@keyframes quick-shine {
+    0% {
+        left: -20%;
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0.8;
+    }
+
+    100% {
+        left: 120%;
+        opacity: 0;
+    }
+}
+
+
+.games-section {
+    background-color: #0B0E13;
+}
+
+.head-text {
+    color: #CBFE1C;
+    letter-spacing: 2px;
+}
+
+.game-line {
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #CBFE1C;
+}
+
+.left-line {
+    clip-path: polygon(0 50%,
+            12% 0%,
+            100% 25%,
+            100% 75%,
+            12% 100%);
+}
+
+.right-line {
+    clip-path: polygon(100% 50%,
+            88% 0%,
+            0% 25%,
+            0% 75%,
+            88% 100%);
+}
+
+
+.games-section h2 {
+    color: rgb(241, 241, 241);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    font-family: "Days One", sans-serif;
+}
+
+
+.game-card {
+    overflow: hidden;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+}
+
+
+.game-card img {
+    height: 300px;
+    ;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    transition: transform0.3s ease;
+}
+
+.game-overlay {
+    opacity: 0;
+    transform: translateY(20px);
+    padding: 20px;
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.game-card:hover {
+    border-color: #CBFE1C;
+}
+
+.game-card:hover .game-overlay {
+    background-image: linear-gradient(to top, oklab(0.928225 -0.122995 0.187224 / 0.8) 0%, oklab(0.928225 -0.122995 0.187224 / 0.4) 50%, rgba(0, 0, 0, 0) 100%);
+    opacity: 1;
+    transform: translateY(0);
+    border: solid 2px #CBFE1C;
+}
+
+.game-card:hover img {
+    transform: scale(1.05);
+}
+
+.game-tag {
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    background-color: #2C461D;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+    padding: 9px;
+}
+
+.game-tag i {
+    color: #CBFE1C;
+}
+
+
+.game-overlay p {
+    color: rgb(11, 14, 19);
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.slider-arrow {
+    background-color: transparent;
+    border: 1px solid #99A1AF;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: #99A1AF;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: 10px;
+}
+
+.slider-arrow:hover {
+    color: #CBFE1C;
+    border: 1px solid #CBFE1C;
+}
+
+
+.view-all {
+    margin-left: 15px;
+    padding: 10px 20px;
+    border: 1px solid #CBFE1C;
+    color: #CBFE1C;
+    background-color: transparent;
+    transition: 0.3s ease;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.view-all:hover {
+    background-color: #CBFE1C;
+    color: #000;
+}
+
+.what-do-section {
+    background-color: #0B0E13;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.what-do-section h2 {
+    color: rgb(241, 241, 241);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    font-family: "Days One", sans-serif;
+}
+
+.what-do-section p {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.what-do-section p span {
+    color: #CBFE1C;
+}
+
+.game-square {
+    border: 2px solid #1E2939;
+    background-color: #1A1A1A;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.game-square::before,
+.game-square::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.game-square::before {
+    top: 10px;
+    left: 10px;
+    border-top: 45px solid #CBFE1C;
+    border-right: 45px solid transparent;
+}
+
+.game-square::after {
+    bottom: 10px;
+    right: 10px;
+    border-bottom: 45px solid #CBFE1C;
+    border-left: 45px solid transparent;
+}
+
+.game-square:hover::before,
+.game-square:hover::after {
+    opacity: 1;
+}
+
+.game-square:hover {
+    border: 2px solid #CBFE1C;
+}
+
+.game-square:hover .icon-box {
+    background-color: #CBFE1C;
+    transform: scale(1.08);
+}
+
+.game-square:hover .icon-box i {
+    color: #000;
+}
+
+.icon-box {
+    width: 65px;
+    height: 65px;
+    background-color: #1E2939;
+}
+
+.icon-box i {
+    color: #CBFE1C;
+
+}
+
+.game-square img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.game-square h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    font-family: "Days One", sans-serif;
+}
+
+.games-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.games-track {
+    display: flex;
+    width: max-content;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.games-left {
+    animation: scrollLeft 20s linear infinite;
+}
+
+.games-right {
+    animation: scrollRight 20s linear infinite;
+}
+
+@keyframes scrollLeft {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scrollRight {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.play-card {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    background: #1c2330;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(163, 230, 53, 0.15);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+
+.play-card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.play-line {
+    width: 80%;
+    max-width: 900px;
+    height: 2px;
+    margin: 40px auto;
+    background: linear-gradient(to right, transparent 0%, #CBFE1C 50%, transparent 100%);
+    box-shadow: 0 0 15px 2px rgba(203, 254, 28, 0.7);
+    border-radius: 50%;
+}
+
+
+.our-team-section h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    font-family: "Days-one", sans-serif;
+}
+
+.our-team-section .team-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: oklch(0.707 0.022 261.325);
+}
+
+.team-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    height: 380px;
+}
+
+.team-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+
+}
+
+.team-tag {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    transform: rotate(90deg);
+    transform-origin: right top;
+    transition: color 0.4s ease;
+    z-index: 2;
+}
+
+.team-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 20%, transparent 60%);
+    z-index: 1;
+}
+
+.team-info {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 10px;
+    z-index: 2;
+    text-align: left;
+}
+
+.team-overlay {
+    margin: auto;
+}
+
+
+.team-info h5 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: "Days One", sans-serif;
+}
+
+.team-role {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #C6C6C6;
+    margin-bottom: 2px;
+}
+
+.team-detail {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: oklch(0.707 0.022 261.325);
+}
+
+.team-card:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.team-card:hover .team-tag {
+    color: #CBFE1C;
+}
+
+.team-card:hover .team-info .team-role {
+    color: #CBFE1C;
+}
+
+
+.contact-section {
+    background-color: #0E131F;
+    color: #fff;
+    overflow: hidden;
+
+}
+
+
+.contact-section h2 {
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 700;
+    font-family: "Days One", sans-serif;
+}
+
+.contact-section .contact-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: oklch(0.707 0.022 261.325);
+}
+
+.info-card h5 {
+    font-size: 20px;
+    font-family: "Days one", sans-serif;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.form-card h3 {
+    font-family: "Days One", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+
+.text-accent {
+    color: #CBFE1C;
+}
+
+
+.info-card,
+.form-card {
+    background-color: #1F2939;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+.icon-circle {
+    width: 55px;
+    height: 55px;
+    background-color: #CBFE1C;
+    color: #000;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+
+.community-card {
+    background-image: linear-gradient(to right, rgb(203, 254, 28) 0%, oklch(0.792 0.209 151.711) 100%);
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #CBFE1C;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.social-icon:hover {
+    color: #517a40;
+}
+
+.custom-input {
+    background-color: #374153;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px 25px;
+}
+
+.custom-input::placeholder {
+    color: #8da1b5;
+}
+
+.custom-input:focus {
+    box-shadow: 0 0 0 2px #CBFE1C;
+    background-color: #374153;
+}
+
+.custom-checkbox:checked {
+    background-color: #CBFE1C;
+    border-color: #CBFE1C;
+}
+
+
+.btn-green {
+    background-color: #CBFE1C;
+    color: #000;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+}
+
+
+.game-footer {
+    background-color: #000000;
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo-icon {
+    width: 32px;
+    height: 22px;
+    color: #CBFE1C;
+    border-radius: 12px;
+    font-size: 20px;
+
+}
+
+.text-footer {
+    color: #CBFE1C;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-policy-links a {
+    color: #99A1AF;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-links a:hover,
+.footer-policy-links a:hover {
+    color: #CBFE1C;
+}
+
+.footer-details {
+    margin-bottom: 15px;
+}
+
+.footer-social-link {
+    color: #99A1AF;
+    transition: color 0.2s ease;
+    text-decoration: none;
+}
+
+.footer-social-link:hover {
+    color: #CBFE1C;
+}
+
+.footer-line {
+    border-color: #99A1AF;
+    opacity: 1;
+}
